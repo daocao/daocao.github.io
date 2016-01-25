@@ -83,7 +83,7 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
 <meta property="og:type" content="article">
 <meta property="og:title" content="第2课 编程工具与开发环境">
 <meta property="og:url" content="http://daocao.github.io/2016/01/24/第2课-编程工具与开发环境/index.html">
-<meta property="og:site_name" content="稻草大人逼逼叨">
+<meta property="og:site_name" content="稻草大人叨逼叨">
 <meta property="og:description" content="第一节 C语言的开发环境及DIY自己的开发环境 常见的C语言开发环境： 
 
 开发环境的组成：
@@ -110,7 +110,7 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
 <meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/complier.png">
 <meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/common.png">
 <meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/default.png">
-<meta property="og:updated_time" content="2016-01-25T04:20:47.000Z">
+<meta property="og:updated_time" content="2016-01-25T14:39:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第2课 编程工具与开发环境">
 <meta name="twitter:description" content="第一节 C语言的开发环境及DIY自己的开发环境 常见的C语言开发环境： 
@@ -153,7 +153,7 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
   };
 </script>
 
-  <title> 第2课 编程工具与开发环境 | 稻草大人逼逼叨 </title>
+  <title> 第2课 编程工具与开发环境 | 稻草大人叨逼叨 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -182,7 +182,7 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">稻草大人逼逼叨</span>
+      <span class="site-title">稻草大人叨逼叨</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -316,7 +316,7 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
                 <a href="/2016/01/24/第2课-编程工具与开发环境/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/01/24/第2课-编程工具与开发环境/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/24/第2课-编程工具与开发环境/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -364,7 +364,22 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
 <li><p>调试环境的配置：下载gdb ——&gt; 解压后，复制gdb.exe和libiconv-2.dll到mingw64/bin下 ——&gt;打开setting ——&gt; debuger ——&gt;选中前三项 ——&gt; 点击左侧default ——&gt; 选择Executable path(刚刚复制到bin下的gdb.exe) ——&gt; debuger type 选择 DGB ——&gt; 选择中前四项 ——&gt; 点击OK<img src="http://7xqfke.com1.z0.glb.clouddn.com/common.png" alt="Drawing" width="500px"><img src="http://7xqfke.com1.z0.glb.clouddn.com/default.png" alt="Drawing" width="500px"></p>
 </li>
 </ol>
-<h3 id="u7B2C_u4E8C_u8282__u521B_u5EFA_u4F60_u7684_u7B2C_u4E00_u4E2AC_u8BED_u8A00_u5DE5_u7A0B"><a href="#u7B2C_u4E8C_u8282__u521B_u5EFA_u4F60_u7684_u7B2C_u4E00_u4E2AC_u8BED_u8A00_u5DE5_u7A0B" class="headerlink" title="第二节 创建你的第一个C语言工程"></a>第二节 创建你的第一个C语言工程</h3><h3 id="u7B2C_u4E09_u8282__u4E00_u8D77_u719F_u6089_u4E0BCodeBlocks"><a href="#u7B2C_u4E09_u8282__u4E00_u8D77_u719F_u6089_u4E0BCodeBlocks" class="headerlink" title="第三节 一起熟悉下CodeBlocks"></a>第三节 一起熟悉下CodeBlocks</h3>
+<h3 id="u7B2C_u4E8C_u8282__u4E00_u8D77_u719F_u6089_u4E0BCodeBlocks"><a href="#u7B2C_u4E8C_u8282__u4E00_u8D77_u719F_u6089_u4E0BCodeBlocks" class="headerlink" title="第二节 一起熟悉下CodeBlocks"></a>第二节 一起熟悉下CodeBlocks</h3><p><strong> 用CB创建第一个C语言工程 </strong></p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main()
+{
+    printf(&quot;Hello World!\n&quot;);
+    return 0;
+}
+</code></pre><p>stdio.h 和stdlib.h 是两个C系统库的头文件，系统的头文件写在&lt;&gt;里，自定义的头文件写咋“”里，int main(){}是系统的入口函数，每个C语言项目都有且仅有一个mian函数。int是main函数的返回值类型，每个函数都有返回值，man函数的返回值是int类型的。main函数的()里可以有一些参数，也可以没有。{}包含着main函数的作用域，作用域里的printf(“Hello World!\n”);是打印Hello World!\n的指令，return 0是返回值。</p>
+<p>主要熟悉的开发环境内容：</p>
+<ol>
+<li><p><strong> 熟悉下CB开发环境 </strong></p>
+</li>
+</ol>
+
       
     </div>
 
@@ -407,11 +422,8 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+      <div class="ds-thread" data-thread-key="2016/01/24/第2课-编程工具与开发环境/"
+           data-title="第2课 编程工具与开发环境" data-url="http://daocao.github.io/2016/01/24/第2课-编程工具与开发环境/">
       </div>
     
   </div>
@@ -502,7 +514,7 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E00_u8282_C_u8BED_u8A00_u7684_u5F00_u53D1_u73AF_u5883_u53CADIY_u81EA_u5DF1_u7684_u5F00_u53D1_u73AF_u5883"><span class="nav-number">1.</span> <span class="nav-text">第一节 C语言的开发环境及DIY自己的开发环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E8C_u8282__u521B_u5EFA_u4F60_u7684_u7B2C_u4E00_u4E2AC_u8BED_u8A00_u5DE5_u7A0B"><span class="nav-number">2.</span> <span class="nav-text">第二节 创建你的第一个C语言工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E09_u8282__u4E00_u8D77_u719F_u6089_u4E0BCodeBlocks"><span class="nav-number">3.</span> <span class="nav-text">第三节 一起熟悉下CodeBlocks</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E00_u8282_C_u8BED_u8A00_u7684_u5F00_u53D1_u73AF_u5883_u53CADIY_u81EA_u5DF1_u7684_u5F00_u53D1_u73AF_u5883"><span class="nav-number">1.</span> <span class="nav-text">第一节 C语言的开发环境及DIY自己的开发环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E8C_u8282__u4E00_u8D77_u719F_u6089_u4E0BCodeBlocks"><span class="nav-number">2.</span> <span class="nav-text">第二节 一起熟悉下CodeBlocks</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -761,30 +773,28 @@ codeBlocks的安装：下载安装包后，直接下一步完成（略过）
 
   
 
-
-
+  
+    
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'daocao';
-      var disqus_identifier = '2016/01/24/第2课-编程工具与开发环境/';
-      var disqus_title = '第2课 编程工具与开发环境';
-      var disqus_url = 'http://daocao.github.io/2016/01/24/第2课-编程工具与开发环境/';
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"daocao"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-      
-        run_disqus_script('embed.js');
-      
-    </script>
   
+    
+  
+
+
 
 
 
