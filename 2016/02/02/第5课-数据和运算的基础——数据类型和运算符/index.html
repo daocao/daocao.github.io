@@ -57,76 +57,16 @@
 
 
 
-<meta name="description" content="第一节 C语言的人机交互基础 1.1 什么是人机交互 
-人机交互就是，人和计算机通信的方式。
-
-输入
-输出
-
- 1.2 PC上编程的人机交互 
-
-屏幕输入和视频输出
-键盘输入
-音频的输入输出
-
- 1.3 嵌入式系统的人机交互 
-
-串口的输入输出
-LED等以及LED阵列的输出
-蜂鸣器的输出
-触摸屏
-更加发咋的输入输出通路（无线网络，手机）
-
-第二节 常用的几个输入输出函数 2.1 常用屏幕输出函数及">
+<meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第4课 玩转C代码，从输入输出开始">
-<meta property="og:url" content="http://daocao.github.io/2016/02/01/第4课-玩转C代码，从输入输出开始/index.html">
+<meta property="og:title" content="第5课 数据和运算的基础——数据类型和运算符">
+<meta property="og:url" content="http://daocao.github.io/2016/02/02/第5课-数据和运算的基础——数据类型和运算符/index.html">
 <meta property="og:site_name" content="稻草大人叨逼叨">
-<meta property="og:description" content="第一节 C语言的人机交互基础 1.1 什么是人机交互 
-人机交互就是，人和计算机通信的方式。
-
-输入
-输出
-
- 1.2 PC上编程的人机交互 
-
-屏幕输入和视频输出
-键盘输入
-音频的输入输出
-
- 1.3 嵌入式系统的人机交互 
-
-串口的输入输出
-LED等以及LED阵列的输出
-蜂鸣器的输出
-触摸屏
-更加发咋的输入输出通路（无线网络，手机）
-
-第二节 常用的几个输入输出函数 2.1 常用屏幕输出函数及">
-<meta property="og:updated_time" content="2016-02-02T11:50:26.000Z">
+<meta property="og:description">
+<meta property="og:updated_time" content="2016-02-02T11:50:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第4课 玩转C代码，从输入输出开始">
-<meta name="twitter:description" content="第一节 C语言的人机交互基础 1.1 什么是人机交互 
-人机交互就是，人和计算机通信的方式。
-
-输入
-输出
-
- 1.2 PC上编程的人机交互 
-
-屏幕输入和视频输出
-键盘输入
-音频的输入输出
-
- 1.3 嵌入式系统的人机交互 
-
-串口的输入输出
-LED等以及LED阵列的输出
-蜂鸣器的输出
-触摸屏
-更加发咋的输入输出通路（无线网络，手机）
-
-第二节 常用的几个输入输出函数 2.1 常用屏幕输出函数及">
+<meta name="twitter:title" content="第5课 数据和运算的基础——数据类型和运算符">
+<meta name="twitter:description">
 
 
 
@@ -144,7 +84,7 @@ LED等以及LED阵列的输出
   };
 </script>
 
-  <title> 第4课 玩转C代码，从输入输出开始 | 稻草大人叨逼叨 </title>
+  <title> 第5课 数据和运算的基础——数据类型和运算符 | 稻草大人叨逼叨 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -264,7 +204,7 @@ LED等以及LED阵列的输出
             
             
               
-                第4课 玩转C代码，从输入输出开始
+                第5课 数据和运算的基础——数据类型和运算符
               
             
           </h1>
@@ -276,8 +216,8 @@ LED等以及LED阵列的输出
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-01T16:36:17+08:00" content="2016-02-01">
-              2016-02-01
+            <time itemprop="dateCreated" datetime="2016-02-02T19:33:11+08:00" content="2016-02-02">
+              2016-02-02
             </time>
           </span>
 
@@ -306,8 +246,8 @@ LED等以及LED阵列的输出
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/01/第4课-玩转C代码，从输入输出开始/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/01/第4课-玩转C代码，从输入输出开始/" itemprop="commentsCount"></span>
+                <a href="/2016/02/02/第5课-数据和运算的基础——数据类型和运算符/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/02/第5课-数据和运算的基础——数据类型和运算符/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -328,128 +268,7 @@ LED等以及LED阵列的输出
       
 
       
-        <h3 id="u7B2C_u4E00_u8282_C_u8BED_u8A00_u7684_u4EBA_u673A_u4EA4_u4E92_u57FA_u7840"><a href="#u7B2C_u4E00_u8282_C_u8BED_u8A00_u7684_u4EBA_u673A_u4EA4_u4E92_u57FA_u7840" class="headerlink" title="第一节 C语言的人机交互基础"></a>第一节 C语言的人机交互基础</h3><p><strong> 1.1 什么是人机交互 </strong></p>
-<p>人机交互就是，人和计算机通信的方式。</p>
-<ul>
-<li>输入</li>
-<li>输出</li>
-</ul>
-<p><strong> 1.2 PC上编程的人机交互 </strong></p>
-<ul>
-<li>屏幕输入和视频输出</li>
-<li>键盘输入</li>
-<li>音频的输入输出</li>
-</ul>
-<p><strong> 1.3 嵌入式系统的人机交互 </strong></p>
-<ul>
-<li>串口的输入输出</li>
-<li>LED等以及LED阵列的输出</li>
-<li>蜂鸣器的输出</li>
-<li>触摸屏</li>
-<li>更加发咋的输入输出通路（无线网络，手机）</li>
-</ul>
-<h3 id="u7B2C_u4E8C_u8282__u5E38_u7528_u7684_u51E0_u4E2A_u8F93_u5165_u8F93_u51FA_u51FD_u6570"><a href="#u7B2C_u4E8C_u8282__u5E38_u7528_u7684_u51E0_u4E2A_u8F93_u5165_u8F93_u51FA_u51FD_u6570" class="headerlink" title="第二节 常用的几个输入输出函数"></a>第二节 常用的几个输入输出函数</h3><p><strong> 2.1 常用屏幕输出函数及重点 </strong></p>
-<ol>
-<li>字符数出函数putchar：putchar(‘a’);</li>
-<li>格式化输出函数printf<ul>
-<li>函数原型：extern void printf(const char *fromat,…);省略号表示参数数量是可变的。</li>
-<li>调用格式：printf(“格式控制字符串”,输出列表);</li>
-</ul>
-</li>
-<li><p>printf函数使用难点分析，</p>
-<ul>
-<li>格式控制字符串的基本形式（格式控制符都是以%开头的）：[标志][输出最小宽度][.精度][长度]类型，[]包含的都是可以省略的。<ul>
-<li>常见类型字符</li>
-<li>常见标志字符</li>
-<li>最小输出宽度</li>
-<li>长度和精度</li>
-</ul>
-</li>
-<li>一些特殊字符的输入<ul>
-<li>“\n”——回车换行</li>
-<li>“\”——转义字符，单独输入时”\”不输出，如要输出”\”本身要输入”\“</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>printf常见字符格式：</p>
-<ul>
-<li>d　　　　　　　　　　以十进制的方式输出带符号整数（正数不输出符号）</li>
-<li>o　　　　　　　　　　以八进制的方式输出无符号整数（不输出前缀0）</li>
-<li>x,X　　　　　　　　　以十六进制方式输出无符号整数（不输出前缀0）</li>
-<li>u　　　　　　　　　　以十进制的方式输出无符号整数</li>
-<li>f　　　　　　　　　　以小数形式输出单、双精度实数</li>
-<li>e,E　　　　　　　　　以指数形式输出单、双精度实数　</li>
-<li>g,G　　　　　　　　　以%f或%e中较短的输出单、双精度实数</li>
-<li>c　　　　　　　　　　输出单个字符</li>
-<li>s　　　　　　　　　　输出字符串</li>
-</ul>
-</li>
-<li><p>printf常见标志：</p>
-<ul>
-<li>-　　　　　　　　　　结果左对齐，右边空格</li>
-<li>+　　　　　　　　　　输出符号（正号或负号）</li>
-<li>空格　　　　　　　　　输出值为正时冠以空格，为负时冠以负号</li>
-<li>#<br>　　　　　　　　　　对c、s、d、u类无影响，对o类输出前缀o，对x输出前缀0x，对e、g、f类，当结果有小数时给出小数点。
-　　　　　　　　　　　　</li>
-</ul>
-</li>
-</ol>
-<p>Tips：什么是库函数，如何使用库函数：使用库函数时，要先引用库函数的头文件.h文件</p>
-<p><strong> 2.2 常用键盘输入函数及重点 </strong></p>
-<ol>
-<li><p>字符输入函数getchar()，getchar会在键盘按下回车键之后才会读取。</p>
-<p> 函数原型：int getchar(void);</p>
-</li>
-<li><p>格式化输入函数scanf</p>
-<p> 函数原型：int scanf(char *formate[,argument,…]);</p>
-<p> 调用格式：sacnf(“&lt;格式化字符串&gt;”,&lt;地址表&gt;)；地址用&amp;娶</p>
-</li>
-<li><p>scanf难点分析</p>
-<ul>
-<li>传入参数</li>
-<li>格式化字符串</li>
-<li>遇到非空白字符串的处理</li>
-</ul>
-</li>
-<li><p>scanf格式字符：</p>
-<ul>
-<li>%a　　　　　　　　　　读入一个浮点值（仅C99有效）</li>
-<li>%A　　　　　　　　　　同上</li>
-<li>%c　　　　　　　　　　读入一个字符</li>
-<li>%d　　　　　　　　　　读入一个十进制整数</li>
-<li>%i　　　　　　　　　　读入一个十进制、八进制、十六进制整数</li>
-<li>%o　　　　　　　　　　读入一个八进制整数</li>
-<li>%x　　　　　　　　　　读入一个十六进制整数</li>
-<li>%X　　　　　　　　　　同上</li>
-<li>%s　　　　　　　　　　读入一个字符串</li>
-<li>%f　　　　　　　　　　读入一个浮点数</li>
-<li>%F　　　　　　　　　　同上</li>
-<li>%e　　　　　　　　　　同上</li>
-<li>%E　　　　　　　　　　同上</li>
-<li>%g　　　　　　　　　　同上</li>
-<li>%G　　　　　　　　　　同上</li>
-<li>%p　　　　　　　　　　读入一个指针</li>
-<li>%u　　　　　　　　　　读入一个无符号十进制数</li>
-<li>%n　　　　　　　　　　至此已读入值的等价字符数</li>
-<li>%[]　　　　　　　　　　扫描字符集合</li>
-<li>%%　　　　　　　　　　读入%符号</li>
-</ul>
-</li>
-</ol>
-<p><strong> 2.3 通过文件的人机交互函数 </strong></p>
-<ul>
-<li>fopen</li>
-<li>fclose</li>
-<li>getc</li>
-<li>putc</li>
-<li>feof</li>
-<li>fgets</li>
-<li>fputs</li>
-<li>fprintf</li>
-<li>fscanf</li>
-</ul>
-
+        
       
     </div>
 
@@ -460,17 +279,13 @@ LED等以及LED阵列的输出
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/第3课-养成良好习惯-规范编码方法/" rel="next" title="第3课 养成良好习惯--规范编码方法">
-                <i class="fa fa-chevron-left"></i> 第3课 养成良好习惯--规范编码方法
+              <a href="/2016/02/01/第4课-玩转C代码，从输入输出开始/" rel="next" title="第4课 玩转C代码，从输入输出开始">
+                <i class="fa fa-chevron-left"></i> 第4课 玩转C代码，从输入输出开始
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/02/第5课-数据和运算的基础——数据类型和运算符/" rel="prev" title="第5课 数据和运算的基础——数据类型和运算符">
-                第5课 数据和运算的基础——数据类型和运算符 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -496,8 +311,8 @@ LED等以及LED阵列的输出
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/01/第4课-玩转C代码，从输入输出开始/"
-           data-title="第4课 玩转C代码，从输入输出开始" data-url="http://daocao.github.io/2016/02/01/第4课-玩转C代码，从输入输出开始/">
+      <div class="ds-thread" data-thread-key="2016/02/02/第5课-数据和运算的基础——数据类型和运算符/"
+           data-title="第5课 数据和运算的基础——数据类型和运算符" data-url="http://daocao.github.io/2016/02/02/第5课-数据和运算的基础——数据类型和运算符/">
       </div>
     
   </div>
@@ -588,7 +403,7 @@ LED等以及LED阵列的输出
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E00_u8282_C_u8BED_u8A00_u7684_u4EBA_u673A_u4EA4_u4E92_u57FA_u7840"><span class="nav-number">1.</span> <span class="nav-text">第一节 C语言的人机交互基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7B2C_u4E8C_u8282__u5E38_u7528_u7684_u51E0_u4E2A_u8F93_u5165_u8F93_u51FA_u51FD_u6570"><span class="nav-number">2.</span> <span class="nav-text">第二节 常用的几个输入输出函数</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
