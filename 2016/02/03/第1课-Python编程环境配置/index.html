@@ -73,7 +73,13 @@
 　　IDEL是Python安装装包自带的一个集成开发环境。是和Python一起安装的（前提是安装pyth时选中了“Tcl/Tk”组件），安装完Python">
 <meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/python_idel.jpg">
 <meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/interpreter.png">
-<meta property="og:updated_time" content="2016-02-03T07:08:25.000Z">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/new_python_proj.png">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/python_project.png">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/new_python_module.png">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/create_module.png">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/create_module.png">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/run_python.png">
+<meta property="og:updated_time" content="2016-02-03T08:10:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第1课 Python编程环境配置1">
 <meta name="twitter:description" content="第一节 配置Python 
@@ -289,7 +295,7 @@
 <p>　　IDEL是Python安装装包自带的一个集成开发环境。是和Python一起安装的（前提是安装pyth时选中了“Tcl/Tk”组件），安装完Python的同时IDEL也安装完成了。</p>
 <p>　　安装Python后，我们可以从“开始”菜单→“所有程序”→“Python”→“IDLE（Python GUI）”来启动IDLE，然后就用Python编写写程序了。</p>
 <p>　　<img src="http://7xqfke.com1.z0.glb.clouddn.com/python_idel.jpg" alt="Drawing" width="500px"></p>
-<p><strong> 第三节 PyDev介绍 </strong></p>
+<p><strong> 第三节 PyDev介绍，配置Eclipse开发环境 </strong></p>
 <p>　　PyDev是一个Eclipse针对Python开发的插件，在Eclipse里集成PyDev插件之后，我们就可以使用Eclipse编写Python程序了。下面是Mac版Eclipse配置PyDev的过程：</p>
 <ol>
 <li><p>下载安装Eclipse：<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr1" target="_blank" rel="external">Eclipse for JavaEE下载地址</a></p>
@@ -305,6 +311,20 @@
 <ol>
 <li>最后，点[OK]，就可以创建Python项目了。</li>
 </ol>
+<p><strong> 第四节 创建第一个Python项目 </strong></p>
+<p>第一步，点击File ——&gt; new  ——&gt; PyDev Project </p>
+<p><img src="http://7xqfke.com1.z0.glb.clouddn.com/new_python_proj.png" alt="Drawing" width="500px"></p>
+<p>弹出对话框：<br><img src="http://7xqfke.com1.z0.glb.clouddn.com/python_project.png" alt="Drawing" width="500px"></p>
+<p>第二步，在Project name随便填一个名字，作为项目名称。在Grammar Version选择与已经安装好的Python版本对应的版本号，例如：我的版本是3.4，则选中3.0。点击finish，项目创建完成。</p>
+<p>第三步，右键点击项目名称，点击New ——&gt; Pydev Module </p>
+<p><img src="http://7xqfke.com1.z0.glb.clouddn.com/new_python_module.png" alt="Drawing" width="500px"></p>
+<p>弹出创建module对话框：<br><img src="http://7xqfke.com1.z0.glb.clouddn.com/create_module.png" alt="Drawing" width="500px"></p>
+<p>为module起一个名字，点击finish，一个module就创建完成了。</p>
+<p><img src="http://7xqfke.com1.z0.glb.clouddn.com/create_module.png" alt="Drawing" width="500px"></p>
+<p>第四部，双击创建好的module，在编辑区输入代码，并运行项目。</p>
+<pre><code>print(&quot;Hello Python!!!&quot;)
+</code></pre><p><img src="http://7xqfke.com1.z0.glb.clouddn.com/run_python.png" alt="Drawing" width="500px"></p>
+<p>运行后，控制台输出 Hello Python!!!，一个Python项目就创建成功了。</p>
 
       
     </div>
