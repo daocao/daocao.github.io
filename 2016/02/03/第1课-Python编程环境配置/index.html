@@ -57,16 +57,30 @@
 
 
 
-<meta name="description">
+<meta name="description" content="第一节 配置Python 
+　　使用Python语言开发，首先要安装Python的可执行文件，先要去Python的官网下载需要的安装包Python官网下载地址。　
+　　下载Python完之后，点击next安装就可以了。
+ 第二节 IDLE介绍 
+　　IDEL是Python安装装包自带的一个集成开发环境。是和Python一起安装的（前提是安装pyth时选中了“Tcl/Tk”组件），安装完Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第1课 Python编程环境配置1">
-<meta property="og:url" content="http://daocao.github.io/2016/02/03/第1课-Python编程环境配置1/index.html">
+<meta property="og:url" content="http://daocao.github.io/2016/02/03/第1课-Python编程环境配置/index.html">
 <meta property="og:site_name" content="稻草大人叨逼叨">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-02-03T00:49:38.000Z">
+<meta property="og:description" content="第一节 配置Python 
+　　使用Python语言开发，首先要安装Python的可执行文件，先要去Python的官网下载需要的安装包Python官网下载地址。　
+　　下载Python完之后，点击next安装就可以了。
+ 第二节 IDLE介绍 
+　　IDEL是Python安装装包自带的一个集成开发环境。是和Python一起安装的（前提是安装pyth时选中了“Tcl/Tk”组件），安装完Python">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/python_idel.jpg">
+<meta property="og:image" content="http://7xqfke.com1.z0.glb.clouddn.com/interpreter.png">
+<meta property="og:updated_time" content="2016-02-03T07:08:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第1课 Python编程环境配置1">
-<meta name="twitter:description">
+<meta name="twitter:description" content="第一节 配置Python 
+　　使用Python语言开发，首先要安装Python的可执行文件，先要去Python的官网下载需要的安装包Python官网下载地址。　
+　　下载Python完之后，点击next安装就可以了。
+ 第二节 IDLE介绍 
+　　IDEL是Python安装装包自带的一个集成开发环境。是和Python一起安装的（前提是安装pyth时选中了“Tcl/Tk”组件），安装完Python">
 
 
 
@@ -246,8 +260,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/03/第1课-Python编程环境配置1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/03/第1课-Python编程环境配置1/" itemprop="commentsCount"></span>
+                <a href="/2016/02/03/第1课-Python编程环境配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/03/第1课-Python编程环境配置/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -268,7 +282,30 @@
       
 
       
-        
+        <p><strong> 第一节 配置Python </strong></p>
+<p>　　使用Python语言开发，首先要安装Python的可执行文件，先要去Python的官网下载需要的安装包<a href="https://www.python.org/downloads/release/python-344/" target="_blank" rel="external">Python官网下载地址</a>。　</p>
+<p>　　下载Python完之后，点击next安装就可以了。</p>
+<p><strong> 第二节 IDLE介绍 </strong></p>
+<p>　　IDEL是Python安装装包自带的一个集成开发环境。是和Python一起安装的（前提是安装pyth时选中了“Tcl/Tk”组件），安装完Python的同时IDEL也安装完成了。</p>
+<p>　　安装Python后，我们可以从“开始”菜单→“所有程序”→“Python”→“IDLE（Python GUI）”来启动IDLE，然后就用Python编写写程序了。</p>
+<p>　　<img src="http://7xqfke.com1.z0.glb.clouddn.com/python_idel.jpg" alt="Drawing" width="500px"></p>
+<p><strong> 第三节 PyDev介绍 </strong></p>
+<p>　　PyDev是一个Eclipse针对Python开发的插件，在Eclipse里集成PyDev插件之后，我们就可以使用Eclipse编写Python程序了。下面是Mac版Eclipse配置PyDev的过程：</p>
+<ol>
+<li><p>下载安装Eclipse：<a href="http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr1" target="_blank" rel="external">Eclipse for JavaEE下载地址</a></p>
+</li>
+<li><p>下载安装JDK1.6<a href="http://ftp.yz.yamagata-u.ac.jp/pub/eclipse//technology/epp/downloads/release/mars/1/eclipse-jee-mars-1-macosx-cocoa-x86_64.tar.gz" target="_blank" rel="external">JDK1.6下载地址</a></p>
+</li>
+<li>下载PyDev：<a href="http://sourceforge.net/projects/pydev/?source=typ_redirect" target="_blank" rel="external">PyDev下载地址</a></li>
+<li>解压PyDev，将解压后的文件夹里的plugins、features里的所有文件、文件夹，分别拷贝到Eclipse的plugins、features里。</li>
+<li>配置PyDev，打开Eclipse打开Eclipse的偏好设置，点击右侧栏里的PyDev——&gt;Interpreters——&gt;PyDev Interpreter，点击右侧的按钮new，弹出对话框<br><img src="http://7xqfke.com1.z0.glb.clouddn.com/interpreter.png" alt="Drawing" width="500px"></li>
+<li>在Interpreter Name随便填写个名字即可,Interpreter Executable 填写你python所在路径。</li>
+</ol>
+<p>我下载的新的3.4，所以填：<br>/Library/Frameworks/Python.framework/Versions/3.4/bin/python3</p>
+<ol>
+<li>最后，点[OK]，就可以创建Python项目了。</li>
+</ol>
+
       
     </div>
 
@@ -311,8 +348,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/03/第1课-Python编程环境配置1/"
-           data-title="第1课 Python编程环境配置1" data-url="http://daocao.github.io/2016/02/03/第1课-Python编程环境配置1/">
+      <div class="ds-thread" data-thread-key="2016/02/03/第1课-Python编程环境配置/"
+           data-title="第1课 Python编程环境配置1" data-url="http://daocao.github.io/2016/02/03/第1课-Python编程环境配置/">
       </div>
     
   </div>
